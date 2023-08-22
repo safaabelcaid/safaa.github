@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&family=Saira+Condensed:wght@300;700&display=swap');
+body{
+    font-family: 'Paprika', cursive;
+}
+h1,h2{
+    font-family: 'Saira Condensed', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--primary-color:#033b4a;
+--second-color:#20c997;
+--gray:#4a4a4d;
+--bg-primary:#ecf0f3;
+
+}
+.bnt-primary{
+background-color:gray;
+color: #fff;
+padding: 8px 20px;
+font-size: 14px;
+border-radius: 5px;
+transition: all 0.3s ease;
+
+}
+
+
+
+a{
+    text-decoration: none;
+}
+.text-primary{
+    color:var(--primary-color) ;
+}
+.title{
+    color:var(--primary-color) ;
+}
+
+header{
+    background-color: var(--bg-primary);
+    height: 100vh;
+}
+header .navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+   }
+header .navbar nav{             
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+header .navbar nav ul a {
+    margin: 0 15px;
+    color:#033b4a ;
+    font-weight: 600;
+}
+#home #logo{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+header .header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    padding: 5rem 2rem 0 ;
+}
+header .header-content img{
+    max-width: 450px;
+}
+#home .header-content p{
+    font-weight: 700;
+    font-size: 20px;
+}
+#home .header-content h1{
+    font-size: 60px;
+    text-shadow: 1px 1px 1px;
+}
+#home .header-content .title{
+    margin-bottom: 20px;
+}
+#home .header-content .social{
+    margin: 1rem 0 2rem;
+}
+#home .header-content .social a i {
+    font-size: 18px;
+    padding: 10px;
+    background-color:gray ;
+    color:#fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+#home .header-content .social a i:hover{
+    transform: scale(0.85);
+}
+.container{
+    max-width: 100%;
+    margin: auto;
+    padding: 5rem 2rem;
+    background-color: #033b4a;
+    color: #fff;
+}
+#About {
+    padding: 0rem 0;
+}
+#About h2 ,#skills h2 ,#portfolio h2 , #contact h2 ,#services h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.container h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+} 
+ 
+#About hr ,#skills hr, #portfolio hr,#services hr{ 
+    
+    width: 120px;
+    height: 3px;
+    background-color:#fff;
+   border: none ;
+   margin: 5px auto 0;
+}
+#contact hr{
+    background-color: #033b4a;
+    width: 120px;
+    height: 3px;
+    border: none ;
+    margin: 5px auto 0;
+
+
+
+}
+#contact .text{
+    margin-left: 12%;
+}
+
+
+
+
+#contact{
+    display: grid;
+    gap: 0px;
+    padding: 4rem 0;
+}
+#contact .div1{
+ margin-top: 4rem;
+  display: flex;
+   grid-template-columns: repeat(2 , 1fr);
+   gap: 15%;
+}
+#contact .div1 form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 9%;
+    width: 100%;
+    border-radius: 12px;
+
+}
+#contact {
+    background-color: var(--bg-primary);
+}
+
+
+#contact .div1 form button{
+    width: 169px;
+    cursor: pointer;
+    background-color: #033b4a;
+}
+
+#contact .div1 input,
+#contact .div1 textarea{
+    display: block;
+    width: 100%;
+    margin: 5px 0 ;
+    padding: 10px;
+
+}
+.text h4{
+    margin-bottom: 21px;
+}
+
+
+#About .about-containt{
+    margin-top: 4rem;
+
+
+}
+#About .about-containt h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.nom{
+    color:gray;
+    font-size: 24px;
+}
+#About .about-containt p{
+margin-bottom: 20px;
+line-height: 1.8;
+}
+#skills{
+    height: 100%;
+}
+
+#skills .row img{
+    max-width: 40px;
+}
+#skills .skills-content{
+     margin-top: 2rem;
+     
+}
+#skills .skills-content .row{
+    display: grid;
+     grid-template-columns: repeat(3, 5fr);
+     text-align: center;
+}
+#skills .skills-content .row .item{
+background-color: black;
+margin: 20px;
+padding: 14px;
+border-radius: 10px;
+font-size: 18px;
+font-weight: 600;
+
+}
+#portfolio .row{
+    /* display: flex; */
+    /* grid-template-columns: repeat(4 , 1fr); */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    cursor: pointer;
+}
+#portfolio .row .item img{
+    max-width: 70%;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 30px;
+   } 
+   .item h3{
+    margin-left: 70px;
+   }
+   #portfolio .row .item:hover{
+    transform: scale(1.03);
+   }
+   #portfolio .row .item{
+    transition: all 0.3s ease;
+   }
+   #footer{
+    align-items: center;
+    text-align: center;
+    background-color: #033b4a;
+    color: #fff;
+    padding: 20px;
+   }
+   html{
+    scroll-behavior: smooth;
+   }
+   /* tablet responsive */
+   @media( max-width:780px){
+    #home .navbar nav {
+        display: block;
+        text-align: center;
+    }
+  
+   #home .navbar nav ul {
+    margin-top: 20px;
+   }
+   #home .navbar nav ul a {
+    margin: 0 8px;
+   }
+   #home .header-content{
+    grid-template-columns: 1fr;
+   }
+   #home .header-content .content-text{
+    margin-bottom: 0rem;
+    margin-top: 5rem;
+   }
+   #home .header-content h1{
+    font-size: 50px;
+   }
+
+   header .header-content img{
+    max-width: 350px;
+    margin: auto;
+   }
+   #about .about-containt{
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+   }
+   #skills .skills-content .row 
+   #services .row,
+   #portfolio .row{
+grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+
+
+}
+#services img{
+    width: 120px;
+}
+#services .row{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    text-align: center;
+    margin-top: 4rem;
+    color:#033b4a ;
+    gap: 13px;
+}
+#services .row .item{
+    background-color: #fff;
+    padding: 30px 15px;
+    
+}
+#row .h32{
+    margin-top: 19px;
+    margin-left: 20px;
+}
+.item h3{
+    margin-left: 0;
+}
+#services  .row .text2{
+   
+}
+.item h3 {
+    margin-left: 0;
+    margin-top: 11px;
+}
